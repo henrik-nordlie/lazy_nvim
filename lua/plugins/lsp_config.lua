@@ -23,7 +23,7 @@ return {
       local lspconfig = require('lspconfig')
 
       -- Check if clangd exists
-      if vim.fn.executable('clangd-12') == 1 then
+      if vim.fn.executable('clangd') == 1 then
          lspconfig.clangd.setup({
              --cmd = { "clangd-12", "--background-index", "--compile-commands-dir=/home/me489/repositories/trunk"} -- , "--index-file=/home/me489/.cache/clangd" },  -- Use system's native clangd
              cmd = { "clangd", "--background-index", "--compile-commands-dir=/home/me489/repositories/trunk"} -- , "--index-file=/home/me489/.cache/clangd" },  -- Use system's native clangd
